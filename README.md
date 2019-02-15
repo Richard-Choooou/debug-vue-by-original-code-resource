@@ -1,5 +1,5 @@
 # 说明
-调试学习vue时使用最初资源，即原始文本格式，而不是打包后的代码，vue版本2.5.0
+调试学习vue时使用最初资源，即原始文本格式，而不是打包后的代码，vue版本2.6.6
 
 <img width="678" alt="qq20190115-112706 2x" src="https://user-images.githubusercontent.com/23492006/51156888-88d1a300-18b8-11e9-8d39-074abf517a30.png">
 
