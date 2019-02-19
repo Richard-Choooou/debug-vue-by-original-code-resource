@@ -52,11 +52,11 @@ export function _createElement (
   normalizationType?: number
 ): VNode | Array<VNode> {
   if (isDef(data) && isDef((data: any).__ob__)) {
-    process.env.NODE_ENV !== 'production' && warn(
-      `Avoid using observed data object as vnode data: ${JSON.stringify(data)}\n` +
-      'Always create fresh vnode data objects in each render!',
-      context
-    )
+    // process.env.NODE_ENV !== 'production' && warn(
+    //   `Avoid using observed data object as vnode data: ${JSON.stringify(data)}\n` +
+    //   'Always create fresh vnode data objects in each render!',
+    //   context
+    // )
     return createEmptyVNode()
   }
   // object syntax in v-bind
@@ -71,13 +71,13 @@ export function _createElement (
   if (process.env.NODE_ENV !== 'production' &&
     isDef(data) && isDef(data.key) && !isPrimitive(data.key)
   ) {
-    if (!__WEEX__ || !('@binding' in data.key)) {
-      warn(
-        'Avoid using non-primitive value as key, ' +
-        'use string/number value instead.',
-        context
-      )
-    }
+    // if (!__WEEX__ || !('@binding' in data.key)) {
+    //   // warn(
+    //   //   'Avoid using non-primitive value as key, ' +
+    //   //   'use string/number value instead.',
+    //   //   context
+    //   // )
+    // }
   }
   // support single function children as default scoped slot
   if (Array.isArray(children) &&
