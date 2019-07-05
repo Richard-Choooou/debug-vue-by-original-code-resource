@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "调试vue",
-            "url": "http://localhost:8081",
+            "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}",
             "userDataDir": true
         }

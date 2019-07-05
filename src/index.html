@@ -8,8 +8,11 @@
 </head>
 <body>
     <div id="app">
-        <my-component></my-component>
-        <input type="text" v-model="test">
+        <!-- <my-component></my-component> -->
+        <div v-for="item in 3">
+            <span>{{test}}</span>
+            <input type="text" v-model="test">
+        </div>
     </div>
 </body>
 </html>
